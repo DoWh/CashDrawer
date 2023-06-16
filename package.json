@@ -1,22 +1,37 @@
 {
-  "name": "electron-react-demo",
-  "version": "0.1.0",
+  "name": "cash-drawer-app",
+  "version": "1.0.0",
+  "description": "This project for controll cashDrawers and storage log file",
+  "author": "DoWh",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
+    "react-datepicker": "^4.11.0",
     "react-dom": "^18.2.0",
+    "react-moment": "^1.1.3",
     "react-scripts": "5.0.1",
+    "sequelize": "^6.31.1",
+    "serialport": "^11.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "electron-forge start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e": "electron . dev"
+    "e dev": "electron . dev",
+    "e": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "eslintConfig": {
     "extends": [
@@ -37,13 +52,14 @@
     ]
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
     "electron": "^24.1.3",
     "electron-is-dev": "^2.0.0",
+    "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "electron/main.js",
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "proxy": "http://localhost:3001"
 }
