@@ -1,7 +1,7 @@
 <h1>soft for controll cashDrawers and store logs.</h1>  
 <p>First version require PostgresQL for work</p>
 
-<img src="https://i.ibb.co/Ch7pcDX/prev.png">  
+<img src="https://i.ibb.co/2q2nHt6/prev.png">  
 
 
 
